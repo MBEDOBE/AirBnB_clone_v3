@@ -3,31 +3,36 @@
 
 from api.v1.views import app_views
 from flask import jsonify
-
+from models import storage
 from models.amenity import Amenity
-from models.place import Place
-from models.user import User
-from models.state import State
 from models.city import City
+from models.place import Place
 from models.review import Review
+from models.state import State
+from models.user import User
 
-models={'amenities': Amenity,
-       'place': Place,
-       'user' : User,
-       'state' : User,
-       'state' : State,
-       'city' : City,
-       'review' : review
-       }
 
-@app_views.route('/status', methods=['GET'])
+models = {
+        'amenities': Amenity,
+        'cities': City,
+        'places': Place,
+        'reviews': Review,
+        'users': User,
+        'states': State
+        }
+
+
+@app_views.route('/status', methods=['GET'], strict_slashes=False)
 def get_status():
+    """Return the server status"""
     return jsonify(status="OK")
 
-@app_views.route('/stats', methods=['GET'])
-def get_count();
-stats = {}
-for name, model in models.item():
-total = storage.count(model)
-stats[name] = total
-return jsonify(stats)
+
+@app_views.route('/stats', strict_slashes=False)
+def get_stats():
+    """Return stats of all models"""
+    stats = {}
+    for name, model in models.items():
+        total = storage.count(model)
+        stats[name] = total
+    return jsonify(stats)
