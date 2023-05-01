@@ -158,6 +158,7 @@ Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twit
 Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)
   
 Daniel Mbedobe KUNJI - [Github](https://github.com/mbedobe)
+ Ernest T. lartey - [ernestlrty@hotmail.com] [http://github.com/Teddystone08]
 
 Second part of Airbnb: Joann Vuong
 ## License
