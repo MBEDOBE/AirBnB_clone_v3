@@ -159,7 +159,7 @@ Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://tw
   
 Daniel Mbedobe KUNJI - [Github](https://github.com/mbedobe)
   
-Ernest T. lartey - [ernestlrty] (http://github.com/Teddystone08)
+Ernest T. lartey - [Github](http://github.com/Teddystone08)
 
 Second part of Airbnb: Joann Vuong
 ## License
